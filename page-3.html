@@ -28,7 +28,7 @@
             var img;
             
             function setup() {
-                createCanvas(windowWidth, windowHeight).position(0, 0).style("z-index", -1);
+                createCanvas(windowWidth, windowHeight, WEBGL);
                 selectAll("a")[3].addClass("aqui");
                 selectAll(".miNombre").forEach((n) => {
                     n.html("Arlett E. Navea");
