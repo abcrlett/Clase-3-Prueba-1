@@ -28,7 +28,7 @@
             var img;
             
             function setup() {
-                createCanvas(windowWidth, windowHeight, WEBGL);
+                createCanvas(windowWidth, windowHeight, WEBGL).position(0, 0).style("z-index", -1);
                 selectAll("a")[3].addClass("aqui");
                 selectAll(".miNombre").forEach((n) => {
                     n.html("Arlett E. Navea");
@@ -50,7 +50,7 @@
                 rotateX(frameCount * 0.01);
                 rotateY(frameCount * 0.01);
                 texture(img);
-                box(80);
+                box(160);
                 pop();
                 
             }
